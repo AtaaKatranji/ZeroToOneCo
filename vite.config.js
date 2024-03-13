@@ -8,6 +8,6 @@ export default defineConfig({
     outDir: 'dist',
     // Set the base URL if necessary
     // base: '/your-app-name/',
-    base: '/ZeroToOneCo/',
+    base: '/Zero_one/',
   }
 })
