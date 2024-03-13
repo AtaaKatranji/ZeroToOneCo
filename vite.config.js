@@ -8,5 +8,6 @@ export default defineConfig({
     outDir: 'dist',
     // Set the base URL if necessary
     // base: '/your-app-name/',
+    base: 'http://AtaaKatranji.github.io/ZeroToOneCo',
   }
 })
