@@ -1,4 +1,11 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star , innvation, coopreation, Excellence  } from "../assets";
+
+export const values = [
+  { id: 1, name: 'Innovation', description: 'We believe that innovation is the key to developing education and we seek to provide new educational methods that suit the needs of the times', img: innvation },
+  { id: 2, name: 'Cooperation', description: 'We believe that innovation is the key to developing education and we seek to provide new educational methods that suit the needs of the times', img: coopreation },
+  { id: 3, name: 'Excellence', description: 'We believe that innovation is the key to developing education and we seek to provide new educational methods that suit the needs of the times', img: Excellence }
+]
+
 
 export const navLinks = [
   {
@@ -7,15 +14,15 @@ export const navLinks = [
   },
   {
     id: "features",
-    title: "Features",
+    title: "Products",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "about",
+    title: "About Us",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "contactus",
+    title: "Contact Us",
   },
 ];
 

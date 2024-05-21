@@ -7,6 +7,8 @@ import Client from './Client'
 import CTA from './CTA'
 import FeedBackCard from './FeedBackCard'
 import Footer from './Footer'
+import Values from "./Values"
+import FlipCard from './FlipCard'
 
 export {
     Navbar,
@@ -18,4 +20,6 @@ export {
     CTA,
     FeedBackCard,
     Footer,
+    Values,
+    FlipCard,
 }

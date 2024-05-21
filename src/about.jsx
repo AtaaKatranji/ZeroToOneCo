@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style'
 
-import {Navbar,Hero,Stats,Business,Billing,Client,CTA,FeedBackCard,Footer,Values,FlipCard} from './components'
+import {Navbar,Hero,Stats,Business,Billing,Client,CTA,FeedBackCard,Footer,} from './components'
 
 const App = () => (
 
@@ -20,15 +20,8 @@ const App = () => (
 
     <div className={`bg-primary ${styles.flexStart} ${styles.paddingX}`}>
       <div className={`${styles.boxWidth}`}>
-      
-      
-      
         <Stats />
-        
-        
         <Business />
-        
-        <FlipCard />
         <Billing />
         <Footer />
         {/* <Billing /> 
