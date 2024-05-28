@@ -27,8 +27,26 @@ import zero from "./zero to one logo.png";
 import innvation from "./innvation.png";
 import coopreation from "./coopreation.png"; 
 import Excellence from "./Excellence.png";
+import robot1 from "./robot1.png";
+import aboutimg from "./images/about_image.jpg";
+import languageIcon from "./languageIcon.svg";
+import contactUsImg from "./contactUsImg.jpg";
+import Icon_000 from "./images/remarkPage/Icon_000.png";
+import Icon_001 from "./images/remarkPage/Icon_001.png";
+import Icon_002 from "./images/remarkPage/Icon_002.png";
+import Icon_003 from "./images/remarkPage/Icon_003.png";
+import Icon_004 from "./images/remarkPage/Icon_004.png";
+import Icon_006 from "./images/remarkPage/SeconSection-Icon_004.png";
+import checkMark from "./check-mark.svg";
+import  newsletterimg222 from "./images/remarkPage/newsletter-img222.jpg"
+import Image1 from "./images/carousel/1.jpg"
+import Image2 from "./images/carousel/2.jpg"
+import Image3 from "./images/carousel/3.jpg"
+import StarRate from "./starRate.svg"
+import { images } from "../constans/indx";
 
 export {
+  checkMark,
   airbnb,
   bill,
   binance,
@@ -38,6 +56,7 @@ export {
   logo,
   quotes,
   robot,
+  robot1,
   send,
   shield,
   star,
@@ -58,4 +77,11 @@ export {
   innvation,
   coopreation,
   Excellence,
+  aboutimg,
+  languageIcon,
+  contactUsImg,
+  Icon_000,Icon_001,Icon_002,Icon_003,Icon_004,Icon_006,
+  newsletterimg222,
+  Image1,Image2,Image3,
+  StarRate
 };

@@ -1,9 +1,15 @@
 import React from 'react'
 import styles from '../style'
-import { discount , robot } from '../assets'
+import { discount , robot, robot1 } from '../assets'
 import GetStarted from './GetStarted'
+import { useTranslation } from 'react-i18next'
 
-const Hero = () => (
+const Hero = () => {
+  
+  const {t} = useTranslation();
+  
+  return(
+
 
   <section id='Home' className={`flex md:flex-row flex-col ${styles.paddingY}`}>
     
@@ -16,38 +22,43 @@ const Hero = () => (
         </p>
       </div> */}
       <div className={`flex flex-row justify-between items-center w-full`}>
-        <h1 className='flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100px] leading-[75px]'>
+        {/* <h1 className='flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100px] leading-[75px]'>
         The Leading  <br className={`sm:block hidden`} /> {" "}
         <span className='text-gradient-zero ss:text-[72px] text-[52px]'>Partner</span> {" "}
         <span className='text-gradient-zero ss:text-[72px] text-[52px]'>For Digital</span> {" "}   
-        </h1>
-        <div className="ss:flex hidden md:mr-6 mr-0">
+        </h1> */}
+        <h1 className='flex-1 font-poppins font-semibold ss:text-[42px] text-[32px] text-black ss:leading-[100px] leading-[75px]'>{t("greeting")}</h1>
+        {/* <div className="ss:flex hidden md:mr-6 mr-0">
           <GetStarted />
-        </div>
+        </div> */}
 
       </div>
-      <h1 className='font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100px] leading-[75px] w-full'>
-      assessment solutions. 
+      <h1 className='font-poppins font-semibold ss:text-[32px] text-[24px] text-slate-600 ss:leading-[100px] leading-[75px] w-full'>
+      {t("desc.line1")}
       </h1>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-      Our team of experts uses a methodology to identify
-      the credit cards most likely to fit your needs.
-      We examine annual percentage rates, annual fees.
-
-      </p>
+        <li><span className={`${styles.paragraph} text-[22px] max-w-[470px] mt-5`}>
+      {t("desc.line2")}
+      </span></li>
+      <br />
+      <br />
+      <li><span className={`${styles.paragraph} text-[22px] max-w-[470px] mt-5`}>
+      {t("desc.line3")}
+      </span></li>
+     
+      
     </div>
 
     <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10`}>
-    <img src={robot} alt='billing' className='w-[100%] h-[100%] relative z-[5]' />
-    <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient' />
-    <div className='absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient' />
-    <div className='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient' />
+    <img src={robot1} alt='billing' className='w-[100%] h-[100%] relative z-[5] transform -scale-x-100' />
+    <div className='absolute z-[0] w-[15%] h-[12%] top-30 pink__gradient' />
+    <div className='absolute z-[0] w-[60%] h-[60%] rounded-full bottom-40 white__gradient' />
+    <div className='absolute z-[0] w-[50%] h-[50%] right-20 bottom-100 blue__gradient' />
     </div>
     
-    <div className={`ss:hidden ${styles.flexCenter}`}>
+    {/* <div className={`ss:hidden ${styles.flexCenter}`}>
       <GetStarted />
 
-    </div>
+    </div> */}
   </section>
-  )
+  );}
 export default Hero

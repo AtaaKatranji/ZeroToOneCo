@@ -1,9 +1,13 @@
+@import url('./assets/fonts/fonts.css');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('./AllStyles.css');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+/* from Here and down defult ....................................................... */
 .maxWidth {
   max-width: 1000px;
 }
@@ -11,11 +15,13 @@
 
 :root {
   --black-gradient: linear-gradient(
+    /* -278.56% w 91% b  */
     144.39deg,
-    #ffffff -278.56%,
+    #ffffff 80%,
     #6d6d6d -78.47%,
-    #11101d 91.61%
+    #11101d -11.61%,
   );
+  
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
@@ -106,7 +112,7 @@
 }
 
 .box-shadow {
-  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  box-shadow: 0px 0px 100px 0px rgba(66, 71, 91, 0.1);
 }
 
 .sidebar {

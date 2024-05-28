@@ -1,46 +1,44 @@
-import React from 'react'
-import styles from './style'
+import React from 'react';
+import styles from './style';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Navbar , Footer , Home , About, NavbarCopy,  } from './components';
+import ContactUs from './contactUs';
+import Remark from './remark';
+import NotFound from './notFound';
 
-import {Navbar,Hero,Stats,Business,Billing,Client,CTA,FeedBackCard,Footer,Values,FlipCard} from './components'
-
-const App = () => (
-
-  <div className='bg-primary w-full overflow-hidden'>
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-      <Navbar />
-      </div>
-    </div>
+const Layout = ({ children }) => (
+  <div className='bg-secondary w-full overflow-hidden'>
     
-    <div className={`bg-primary ${styles.flexStart}`}>
+    <NavbarCopy />
+      {children}
+      
+    <div className={`bg-secondary ${styles.flexStart} ${styles.paddingX}`}>
       <div className={`${styles.boxWidth}`}>
-        <Hero />
-      </div>
-    </div>
-
-    <div className={`bg-primary ${styles.flexStart} ${styles.paddingX}`}>
-      <div className={`${styles.boxWidth}`}>
-      
-      
-      
-        <Stats />
-        
-        
-        <Business />
-        
-        <FlipCard />
-        <Billing />
-        <Footer />
-        {/* <Billing /> 
-       
-        <Button /> 
-        <FeedBackCard />
-        <Client /> 
-        <CTA /> 
-          */}
+      <Footer />
       </div>
     </div>
   </div>
+);
 
-)
-export default App
+const App = () => (
+  <Router>
+    <Routes>
+      <Route
+        path="/ZeroToOneCo/*"
+        element={
+          <Layout>
+            <Routes>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="contactUs" element={<ContactUs />} />
+            <Route path="remark" element={<Remark />} />
+            <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Layout>
+        }
+      />
+    </Routes>
+  </Router>
+);
+
+export default App;
